@@ -19,7 +19,7 @@ public class ClientToEchoServer {
 	
 	public ClientToEchoServer() throws IOException, ClassNotFoundException {
 		try{
-			attemptToConnect();
+			attemptToConnect(); //bvachgsf
 			createStreams();
 			initProcessing();
 		}
