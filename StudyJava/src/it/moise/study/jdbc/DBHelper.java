@@ -71,6 +71,7 @@ public class DBHelper {
 		try{
 			conn = DriverManager.getConnection(complete_url, u_name, pwd);
 			output.setText("Connessione effettuata con successo!!!");
+			//System.out.println("Connessione effettuata con successo!!!");
 		}
 		catch(SQLException ex) {output.setText(ex.getMessage()); }
 	}
@@ -81,6 +82,7 @@ public class DBHelper {
 			if (conn != null){
 				conn.close();
 				output.setText("Disconnessione effettuata con successo!!!");
+			//	System.out.println("Disconnessione effettuata con successo!!!");
 			}
 		}
 		catch(SQLException ex){ output.setText(ex.getMessage()); }
